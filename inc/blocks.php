@@ -4,7 +4,7 @@ function antler_blocks() {
 	wp_register_script(
 		'antler-labs-blocks',
 		esc_url( get_template_directory_uri() ) . '/blocks.js',
-		array( 'wp-blocks', 'wp-element' )
+		array( 'wp-blocks', 'wp-element', 'underscore' )
 	);
 
 	register_block_type( 'antler-labs/block', array(
