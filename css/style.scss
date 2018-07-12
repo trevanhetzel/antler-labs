@@ -1,0 +1,24 @@
+/*!
+Theme Name: Antler Labs
+
+Author: Hetzel Creative
+Author URI: http://hetzelcreative.com
+
+Version: 1.0
+
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+// Global
+@import "global/variables";
+@import "global/mixins";
+@import "global/normalize";
+@import "global/base";
+@import "global/layout";
+
+
+// Components
+@import "components/header";
+@import "components/hero";
+

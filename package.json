@@ -1,0 +1,35 @@
+{
+	"name": "project-name",
+	"title": "Project Name",
+	"version": "1.0.0",
+	"description": "Repo for Project Name",
+	"repository": {
+		"type": "git",
+		"url": "<url to git repo>"
+	},
+	"scripts": {
+		"build": "webpack --display-exclude --display-chunks",
+		"watch": "webpack --watch --progress --colors",
+		"eslint": "eslint js",
+		"sasslint": "sass-lint -c .sass-lint.yml 'css/**/*.scss' -v -q"
+	},
+	"dependencies": {
+		"webpack": "^4.16.0"
+	},
+	"devDependencies": {
+		"autoprefixer": "^8.6.5",
+		"babel-core": "latest",
+		"babel-eslint": "latest",
+		"babel-loader": "latest",
+		"babel-plugin-add-module-exports": "latest",
+		"babel-plugin-transform-react-jsx": "latest",
+		"babel-preset-env": "latest",
+		"css-loader": "latest",
+		"extract-text-webpack-plugin": "^4.0.0-beta.0",
+		"node-sass": "latest",
+		"postcss-loader": "latest",
+		"sass-lint": "latest",
+		"sass-loader": "latest",
+		"uglifyjs-webpack-plugin": "latest"
+	}
+}
