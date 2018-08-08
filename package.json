@@ -13,9 +13,6 @@
 		"eslint": "eslint js",
 		"sasslint": "sass-lint -c .sass-lint.yml 'css/**/*.scss' -v -q"
 	},
-	"dependencies": {
-		"webpack": "^4.16.0"
-	},
 	"devDependencies": {
 		"autoprefixer": "^8.6.5",
 		"babel-core": "latest",
@@ -30,6 +27,8 @@
 		"postcss-loader": "latest",
 		"sass-lint": "latest",
 		"sass-loader": "latest",
-		"uglifyjs-webpack-plugin": "latest"
+		"uglifyjs-webpack-plugin": "latest",
+		"webpack": "^4.16.0",
+		"webpack-cli": "^3.0.8"
 	}
 }

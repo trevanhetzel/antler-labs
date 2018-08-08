@@ -80,18 +80,20 @@ registerBlockType('antler-labs/welcome', {
 	save (props) {
 		return (
 			<section className="welcome">
-				<div className="welcome__left">
-					<h2>{ props.attributes.title }</h2>
-					<p>{ props.attributes.paragraph }</p>
-					<a href="#">{ props.attributes.button }</a>
-				</div>
+				<div className="contain">
+					<div className="welcome__left">
+						<h2>{ props.attributes.title }</h2>
+						<p>{ props.attributes.paragraph }</p>
+						<a href="#" class="button">{ props.attributes.button }</a>
+					</div>
 
-				<div className="welcome__image">
-					{
-						props.attributes.mediaURL && (
-							<img src={ props.attributes.mediaURL } />
-						)
-					}
+					<div className="welcome__image">
+						{
+							props.attributes.mediaURL && (
+								<img src={ props.attributes.mediaURL } />
+							)
+						}
+					</div>
 				</div>
 			</section>
 		);

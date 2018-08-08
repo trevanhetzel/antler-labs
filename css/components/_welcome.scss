@@ -1,0 +1,19 @@
+.welcome {
+	background: $white;
+	padding: 7rem 0;
+
+	&__left {
+		width: 60%;
+		padding: 0 6rem 0 0;
+	}
+
+	&__image {
+		width: 40%;
+
+		img {
+			max-width: 100%;
+			height: auto;
+			border-radius: .4rem;
+		}
+	}
+}

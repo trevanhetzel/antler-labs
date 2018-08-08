@@ -16,7 +16,13 @@ add_action( 'init', 'antler_blocks' );
 
 // Hide all but custom blocks
 function antler_allowed_block_types( $allowed_block_types, $post ) {
-	return array( 'antler-labs/hero', 'antler-labs/welcome' );
+	return array(
+		'antler-labs/hero',
+		'antler-labs/welcome',
+		'antler-labs/puppies-available',
+		'antler-labs/puppies-unavailable',
+		'core/gallery'
+		);
 }
 
-add_filter( 'allowed_block_types', 'antler_allowed_block_types', 10, 2 );
+// add_filter( 'allowed_block_types', 'antler_allowed_block_types', 10, 2 );

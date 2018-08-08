@@ -10,9 +10,6 @@ require get_template_directory() . '/inc/post-types.php';
 // Enable post thumbnails
 require get_template_directory() . '/inc/thumbnails.php';
 
-// Gutenberg blocks
-require get_template_directory() . '/inc/blocks.php';
-
 function antler_scripts() {
 	wp_enqueue_script(
 		'starter-bundle',

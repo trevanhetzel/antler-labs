@@ -1,0 +1,21 @@
+.testimonials {
+	padding: 8rem 0;
+	background: $white;
+}
+
+.testimonial {
+	width: 33.333%;
+	padding: 0 2rem;
+	text-align: center;
+
+	img {
+		max-width: 100%;
+		height: auto;
+		border-radius: 50%;
+		margin: 0 auto 2rem;
+	}
+
+	p:first-child {
+		margin: 0 0 2rem;
+	}
+}

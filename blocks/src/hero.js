@@ -26,7 +26,9 @@ wp.blocks.registerBlockType('antler-labs/hero', {
 	save (props) {
 		return (
 			<section className="hero">
-				<h1>{ props.attributes.content }</h1>
+				<div className="contain">
+					<h1>{ props.attributes.content }</h1>
+				</div>
 			</section>
 		);
 	}

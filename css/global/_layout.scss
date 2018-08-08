@@ -1,11 +1,21 @@
 // Inner container
 .contain {
 	@extend %clearfix;
+	display: flex;
 	margin: 0 auto;
 	padding: 0 1rem;
-	max-width: 128rem;
+	max-width: 116rem;
 
 	@include breakpoint(medium) {
-		padding: 0 2rem;
+		padding: 0 3rem;
+	}
+}
+
+.page {
+	background: $white;
+	padding: 6rem 0;
+
+	.contain {
+		display: block;
 	}
 }

@@ -16,9 +16,16 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 @import "global/normalize";
 @import "global/base";
 @import "global/layout";
+@import "global/typography";
 
 
 // Components
 @import "components/header";
 @import "components/hero";
-
+@import "components/welcome";
+@import "components/availability";
+@import "components/button";
+@import "components/gallery";
+@import "components/testimonials";
+@import "components/breed-line";
+@import "components/footer";

@@ -1,0 +1,56 @@
+.header {
+	padding: 3rem 0;
+	background: linear-gradient($tan 0, $white 150%);
+
+	.contain {
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		display: block;
+
+		img {
+			display: block;
+		}
+	}
+
+	&__nav {
+		display: flex;
+		align-items: center;
+		margin: 0 0 0 auto;
+		padding: 0;
+		list-style: none;
+
+		li {
+			display: inline-block;
+			margin: 0 1.2rem;
+		}
+	}
+
+	&__link {
+		display: inline-block;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: $black;
+		font-size: 1.5rem;
+		text-decoration: none;
+		transition: .2s color;
+
+		&:hover {
+			color: $green;
+		}
+	}
+}
+
+.body-home .header__nav-home,
+.body-breed-line .header__nav-breed,
+.body-gallery .header__nav-gallery {
+	background: $green;
+	border-radius: .4rem;
+
+	.header__link {
+		color: $white;
+		padding: .8rem 1.2rem;
+	}
+}

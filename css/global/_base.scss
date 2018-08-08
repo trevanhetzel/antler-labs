@@ -5,17 +5,27 @@
 }
 
 html {
+	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
-}
-
-body {
-	font-size: 10px;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	height: auto;
+	max-height: auto;
+	font-size: 62.5%; // 10px
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	color: $black;
+	letter-spacing: -.02rem;
+	font-family: 'Roboto';
 }
 
 html,
 body {
 	position: relative;
 	height: 100%;
+	background: $tan;
 }
 
 *,

@@ -11,6 +11,8 @@
 	<meta name="msapplication-TileColor" content="#FFFFFF">
 	<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/favicon-144.png">
 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
+
 	<?php if (is_front_page()): ?>
 		<meta property="og:title" content="<?php echo get_bloginfo('description'); ?>">
 		<meta name="twitter:title" content="<?php echo get_bloginfo('description'); ?>">
@@ -32,4 +34,37 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<?php
+if (is_front_page()) {
+	$post_slug = 'home';
+} else {
+	global $post;
+	$post_slug = $post->post_name;
+}
+?>
+<body class="body-<?php echo $post_slug; ?>">
+	<header class="header">
+		<div class="contain">
+			<a href="<?php echo esc_url( home_url() ); ?>" class="header__logo">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="Antler Labs" width="209" height="43">
+			</a>
+
+			<ul class="header__nav">
+				<li class="header__nav-home">
+					<a href="<?php echo esc_url( home_url() ); ?>" class="header__link">Home</a>
+				</li>
+				<li class="header__nav-puppies">
+					<a href="<?php echo esc_url( home_url() ); ?>/puppies" class="header__link">Puppies</a>
+				</li>
+				<li class="header__nav-breed">
+					<a href="<?php echo esc_url( home_url() ); ?>/breed-line" class="header__link">Breed Line</a>
+				</li>
+				<li class="header__nav-gallery">
+					<a href="<?php echo esc_url( home_url() ); ?>/gallery" class="header__link">Gallery</a>
+				</li>
+				<li class="header__nav-contact">
+					<a href="<?php echo esc_url( home_url() ); ?>/contact" class="header__link">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</header>

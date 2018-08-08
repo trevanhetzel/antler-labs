@@ -1,0 +1,30 @@
+.footer {
+	padding: 3.5rem 0;
+	background: $black;
+	color: $white;
+
+	.contain {
+		justify-content: space-between;
+
+		p:last-child {
+			vertical-align: middle;
+			margin: 0 0 0 auto;
+		}
+	}
+
+	a {
+		color: $white;
+		text-decoration: none;
+		transition: opacity .15s;
+
+		&:hover {
+			opacity: .7;
+		}
+	}
+
+	svg {
+		width: 2.2rem;
+		height: 2.2rem;
+		margin: -.625rem 0 0 1.5rem;
+	}
+}

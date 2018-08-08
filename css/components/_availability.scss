@@ -1,0 +1,18 @@
+.availability {
+	background: $tan-dark;
+	padding: 3rem 0;
+
+	.contain {
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.button {
+		margin: 0 0 0 auto;
+	}
+
+	span {
+		text-transform: uppercase;
+		color: $green;
+	}
+}
